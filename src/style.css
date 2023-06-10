@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400&display=swap');
+
+:root{
+    --primary-color-text: #0A3871;
+    --secondary-color-text: #D8DFE8;
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body,
+main{
+    height: 100%;
+    background-color: #F3F5FC;
+    height: 90vh;
+    text-align: center;
+}
+main{
+    display: flex;
+    width: 100%;
+}
+
+.left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+    margin-right: 10rem;
+}
+
+textarea{
+    border: none;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+    height: 100%;
+    width: 70%;
+}
+
+textarea::placeholder{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    color: var(--primary-color-text);
+}
+
+.informacion{
+    color: #495057;
+    opacity: 0.8;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    gap: 0.3rem;
+}
+
+.informacion::before{
+    content: url("../assets/images/bi_exclamation-circle-fill.png");
+}
+
+.content__btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    border-color: var(--primary-color-text);
+    cursor: pointer;
+}
+
+.btn__encriptar{
+    background-color: var(--primary-color-text);
+    color: #fff;
+}
+
+.btn__desencriptar{
+    background-color: white;
+    color: var(--primary-color-text);
+}
+
+.right{
+    padding-right: 40px;
+}
+
+.right > div{
+    background-color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    width: 376px;
+    height: 100%;
+}
+
+.right > div > img{
+    width: 336px;
+}
+
+.right > div > h1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.right > div > h6{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+#texto-resultado{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+@media (max-width: 912px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content__logo{
+        margin-top: 24px;
+        display: flex;
+        width: 100%;
+    }
+
+    .left{
+        margin: 0;
+        margin-bottom: 2rem;
+        height: 100%;
+    }
+
+    textarea{
+        width: 90%;
+        height: 100%;
+        min-height: 164px
+    }
+
+    .right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .right > div{
+        background-color: white;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 32px;
+        width: 80%;
+        height: 100%;
+    }
+
+    .right > div > img{
+        display: none;
+    }
+
+    
+}
